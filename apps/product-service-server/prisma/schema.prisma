@@ -1,0 +1,42 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id                  String    @id @default(cuid())
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  description         String?
+  code                String?
+  externalCode        String?
+  archived            Boolean?
+  pathName            String?
+  vatEnabled          Boolean?
+  useParentVat        Boolean?
+  images              Json?
+  minPrice            Float?
+  buyPrice            Float?
+  barcodes            Json?
+  attributes          Json?
+  article             String?
+  weight              Float?
+  volume              Float?
+  meta                Json?
+  start               DateTime?
+  end                 DateTime?
+  day                 String?
+  price               Float?
+  accountId           String?
+  shared              Boolean?
+  updated             DateTime?
+  name                String?
+  effectiveVat        Int?
+  effectiveVatEnabled Boolean?
+  vat                 Int?
+  salePrices          Json?
+}

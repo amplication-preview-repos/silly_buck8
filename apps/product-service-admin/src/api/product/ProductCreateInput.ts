@@ -1,0 +1,32 @@
+import { InputJsonValue } from "../../types";
+
+export type ProductCreateInput = {
+  description?: string | null;
+  code?: string | null;
+  externalCode?: string | null;
+  archived?: boolean | null;
+  pathName?: string | null;
+  vatEnabled?: boolean | null;
+  useParentVat?: boolean | null;
+  images?: InputJsonValue;
+  minPrice?: number | null;
+  buyPrice?: number | null;
+  barcodes?: InputJsonValue;
+  attributes?: InputJsonValue;
+  article?: string | null;
+  weight?: number | null;
+  volume?: number | null;
+  meta?: InputJsonValue;
+  start?: Date | null;
+  end?: Date | null;
+  day?: string | null;
+  price?: number | null;
+  accountId?: string | null;
+  shared?: boolean | null;
+  updated?: Date | null;
+  name?: string | null;
+  effectiveVat?: number | null;
+  effectiveVatEnabled?: boolean | null;
+  vat?: number | null;
+  salePrices?: InputJsonValue;
+};

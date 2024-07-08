@@ -1,0 +1,35 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type ProductOrderByInput = {
+  id?: SortOrder;
+  createdAt?: SortOrder;
+  updatedAt?: SortOrder;
+  description?: SortOrder;
+  code?: SortOrder;
+  externalCode?: SortOrder;
+  archived?: SortOrder;
+  pathName?: SortOrder;
+  vatEnabled?: SortOrder;
+  useParentVat?: SortOrder;
+  images?: SortOrder;
+  minPrice?: SortOrder;
+  buyPrice?: SortOrder;
+  barcodes?: SortOrder;
+  attributes?: SortOrder;
+  article?: SortOrder;
+  weight?: SortOrder;
+  volume?: SortOrder;
+  meta?: SortOrder;
+  start?: SortOrder;
+  end?: SortOrder;
+  day?: SortOrder;
+  price?: SortOrder;
+  accountId?: SortOrder;
+  shared?: SortOrder;
+  updated?: SortOrder;
+  name?: SortOrder;
+  effectiveVat?: SortOrder;
+  effectiveVatEnabled?: SortOrder;
+  vat?: SortOrder;
+  salePrices?: SortOrder;
+};
